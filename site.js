@@ -205,12 +205,12 @@ function pageCheck() {
             nextProjectLinkEl.style.display = null;
         }
     }
-    document.body.classList.toggle('tall', scrollLeft > 450);
+    document.body.classList.toggle('tall', scrollLeft > 350);
     if (lastScrollLeft == scrollLeft)
         return;
     lastScrollLeft = scrollLeft;
-    if (scrollLeft < 400) {
-        let opacity = (-(1 / 380) * scrollLeft) + 1;
+    if (scrollLeft < 300) {
+        let opacity = (-(1 / 280) * scrollLeft) + 1;
         if (opacity < 0)
             opacity = 0;
         let sidebarEl = document.querySelector('.sidebar');
@@ -220,7 +220,7 @@ function pageCheck() {
     let scrollHintEl = document.querySelector('.scrollHint');
     if (scrollHintEl) {
         let projectEl = document.querySelector('.projects');
-        if ((scrollLeft > 0) && ((projectEl.clientWidth + 450) > pageWidth)) {
+        if ((scrollLeft > 0) && ((projectEl.clientWidth + 350) > pageWidth)) {
             scrollHintEl.classList.add('hidden');
         }
         else {
