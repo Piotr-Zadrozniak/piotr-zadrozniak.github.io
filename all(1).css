@@ -105,7 +105,7 @@ main {
 }
 main .content {
   max-height: 800px;
-  margin: auto auto auto 450px;
+  margin: auto auto auto 300px;
   position: absolute;
   top: 0;
   left: 0;
