@@ -62,15 +62,6 @@
 
   <footer id="footer">
   <p id="footerContent">© 2024</p>
-
-  <carbon-branding>
-<a href="https://carbonmade.com/?campaign=c3-footer" target="_blank" rel="nofollow">
-<span>Made with</span>
-<carbon-glyph></carbon-glyph>
-<span>Carbonmade</span>
-</a>
-</carbon-branding>
-
 </footer>
 </div>
 
@@ -78,23 +69,23 @@
   <div class="projectWrap">
     
       <div class="miniTitle">
-        <h6><a class="goHome" href="https://preview.carbonmade.com/projects/3117254undefined#" on-click="navigate:home">places<br><i class="arrow">←</i></a></h6> 
+        <h6><a class="goHome" href="../index.html" on-click="navigate:home">places<br><i class="arrow">←</i></a></h6> 
       </div>
     
   
-    <div class="projectSingle container" style="width: 10373px;"><carbon-piece class="piece contained" data-width="728" data-height="705" style="width: 728px; height: 705px;">
+    <div class="projectSingle container" style="width: 5431px;"><carbon-piece class="piece contained" data-width="416" data-height="400" style="width: 413px; height: 400px;">
             <img src="./chs1QfxawqyeTLFy5cRIej">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="836" data-height="800" style="width: 836px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="418" data-height="400" style="width: 418px; height: 400px;">
             <img src="./e9BHXbosFtycMboktqEpS9">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="836" data-height="800" style="width: 836px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="418" data-height="400" style="width: 418px; height: 400px;">
             <img src="./3pTizj7HtTcezJjxNPoc40">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="834" data-height="800" style="width: 834px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="417" data-height="400" style="width: 417px; height: 400px;">
             <img src="./k2Dy6LLnWzfcrPuwzIsdTI">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="719" data-height="800" style="width: 719px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="359" data-height="400" style="width: 359px; height: 400px;">
             <img src="./7qRrYg7TL5og2Wq4O4voFK">
             
             <span class="captionLink"></span>
@@ -105,7 +96,7 @@
                 </div>          
               </div>
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="1360" data-height="800" style="width: 1360px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="680" data-height="400" style="width: 680px; height: 400px;">
             <img src="./dlIpalHSMWwbBqxpVY2Mdp">
             
             <span class="captionLink"></span>
@@ -116,7 +107,7 @@
                 </div>          
               </div>
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="699" data-height="800" style="width: 699px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="350" data-height="400" style="width: 350px; height: 400px;">
             <img src="./lxYFferGTv6bW83QCXNeIE">
             
             <span class="captionLink"></span>
@@ -127,7 +118,7 @@
                 </div>          
               </div>
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="705" data-height="800" style="width: 705px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="352" data-height="400" style="width: 352px; height: 400px;">
             <img src="./7lVngVTqX5FcmOVIaQ753u">
             
             <span class="captionLink"></span>
@@ -138,16 +129,16 @@
                 </div>          
               </div>
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="998" data-height="800" style="width: 998px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="499" data-height="400" style="width: 499px; height: 400px;">
             <img src="./hjRvhicw0kIcKLXLXgCHbf">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="982" data-height="800" style="width: 982px; height: 800px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="491" data-height="400" style="width: 491px; height: 400px;">
             <img src="./lCWpil3eK1MfdDhiUMiVwR">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="745" data-height="630" style="width: 745px; height: 630px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="473" data-height="400" style="width: 473px; height: 400px;">
             <img src="./jYctbchnjorfSHMtesFFOf">
             
-          </carbon-piece><carbon-piece class="piece contained" data-width="711" data-height="630" style="width: 711px; height: 630px;">
+          </carbon-piece><carbon-piece class="piece contained" data-width="451" data-height="400" style="width: 451px; height: 400px;">
             <img src="./6slZYhiWPnUdl0mY9O22UV">
             
           </carbon-piece></div>
@@ -186,18 +177,6 @@
     <script src="./bridge(1).js" crossorigin=""></script>
     <script src="./uploader(1).js"></script>
     <script src="./editable.js"></script>
-    <script>
-document.body.addEventListener('mouseover', e => {
-    let target = e.target;
-    if (target.matches('.captionLink')) {
-        let pieceEl = target.closest('carbon-piece');
-        pieceEl.classList.add('hovering');
-        let mouseLeaveObserver = _.observe(pieceEl, 'mouseleave', e => {
-            e.target.classList.remove('hovering');
-            mouseLeaveObserver.stop();
-        });
-    }
-});
-</script>
+
   
 </body></html>
