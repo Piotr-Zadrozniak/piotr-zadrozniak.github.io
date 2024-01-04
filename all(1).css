@@ -1540,16 +1540,6 @@ carbon-paginator .next { float: right; }
 @media screen and (max-device-width:1000px) {
   html { -webkit-text-size-adjust: none; }
 }
-@media screen and (max-height:820px) {
-  .sidebar {
-    bottom: 30px;
-    max-height: 770px;
-  }
-  main > .content {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-}
 /* imported: '/styles/options/accentColor.scss */
 
 carbon-player.audio .control { background: rgba(62, 217, 132, 0.8); }
