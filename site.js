@@ -1,4 +1,3 @@
-Carbon.Reactive.on('routed', adjust);
 var mainEl = document.querySelector('main');
 var frameRequest;
 var l = mainEl.scrollLeft;
@@ -134,31 +133,6 @@ function setAboutColumns() {
         el.style.marginRight = width + 'px';
     }
 }
-Carbon.Reactive.on('routed', function (e) {
-    if (!e.reloaded) {
-        mainEl.scrollLeft = 0;
-    }
-    for (var el of Array.from(document.querySelectorAll('.siteLinks li'))) {
-        el.classList.remove('current');
-    }
-    document.body.classList.remove('showNav', 'project');
-    if (e.path == '/') {
-        selectSiteLink('home');
-    }
-    else if (e.path.startsWith('/project')) {
-        document.body.classList.add('project');
-        setProjectInfoWidth();
-    }
-    else if (e.path.startsWith('/about')) {
-        setAboutColumns();
-        setContainerWidth(document.querySelector('.container'));
-        selectSiteLink('about');
-    }
-    else if (e.path.startsWith('/contact')) {
-        selectSiteLink('contact');
-    }
-    setupHammer(document.querySelector('.sidebar'));
-});
 function setupHammer(sidebarEl) {
     var hammertime = new Hammer(sidebarEl);
     hammertime.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL, threshold: 0 });
@@ -229,12 +203,6 @@ function pageCheck() {
     }
 }
 document.body.classList.add('loaded');
-Carbon.controllers.navigate = {
-    home() {
-        scrollTo(mainEl, 0, 250);
-    }
-};
-Carbon.ActionKit.observe('click');
 function scrollTo(element, to, duration) {
     let difference = to - element.scrollLeft;
     let perTick = difference / duration * 10;
