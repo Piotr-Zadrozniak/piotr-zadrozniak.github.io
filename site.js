@@ -198,19 +198,19 @@ function pageCheck() {
     let pageWidth = window.innerWidth;
     let nextProjectLinkEl = document.querySelector('.nextProjectLink');
     if (nextProjectLinkEl) {
-        if (pageWidth < 1280 && scrollLeft < 300) {
+        if (pageWidth < 1280 && scrollLeft < 250) {
             nextProjectLinkEl.style.display = 'none';
         }
         else {
             nextProjectLinkEl.style.display = null;
         }
     }
-    document.body.classList.toggle('tall', scrollLeft > 350);
+    document.body.classList.toggle('tall', scrollLeft > 250);
     if (lastScrollLeft == scrollLeft)
         return;
     lastScrollLeft = scrollLeft;
-    if (scrollLeft < 300) {
-        let opacity = (-(1 / 280) * scrollLeft) + 1;
+    if (scrollLeft < 250) {
+        let opacity = (-(1 / 205) * scrollLeft) + 1;
         if (opacity < 0)
             opacity = 0;
         let sidebarEl = document.querySelector('.sidebar');
@@ -220,7 +220,7 @@ function pageCheck() {
     let scrollHintEl = document.querySelector('.scrollHint');
     if (scrollHintEl) {
         let projectEl = document.querySelector('.projects');
-        if ((scrollLeft > 0) && ((projectEl.clientWidth + 350) > pageWidth)) {
+        if ((scrollLeft > 0) && ((projectEl.clientWidth + 250) > pageWidth)) {
             scrollHintEl.classList.add('hidden');
         }
         else {

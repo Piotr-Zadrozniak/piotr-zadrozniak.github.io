@@ -105,7 +105,7 @@ main {
 }
 main .content {
   max-height: 400px;
-  margin: auto auto auto 300px;
+  margin: auto auto auto 225px;
   position: absolute;
   top: 0;
   left: 0;
@@ -585,8 +585,8 @@ article.editable .confirmGuts {
 /* imported: '/styles/parts/header.scss */
 
 header {
-  width: 450px;
-  padding: 20px;
+  width: 225px;
+  padding: 10px;
   top: 0;
   box-sizing: border-box;
 }
@@ -643,11 +643,11 @@ header h2.tagline {
 /* imported: '/styles/parts/footer.scss */
 
 footer {
-  width: 410px;
+  width: 225px;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 footer p,
 footer carbon-branding {
@@ -679,7 +679,7 @@ footer carbon-branding > a {
 /* imported: '/styles/parts/nav.scss */
 
 .sidebar {
-  width: 450px;
+  width: 225px;
   height: 100%;
   max-height: 400px;
   position: fixed;
